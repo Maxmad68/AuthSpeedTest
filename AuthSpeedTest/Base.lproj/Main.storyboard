@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17140" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17115"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AuthSpeedTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auth method:--" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TfS-dj-6WX">
+                                <rect key="frame" x="20" y="44" width="374" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="xob-sL-zLI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NfV-ti-oWd">
+                                <rect key="frame" x="0.0" y="181" width="414" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="LO1-ng-HJq"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Pua-44-LFX"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYn-hv-sH4">
+                                <rect key="frame" x="175" y="143" width="64" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="MxL-lc-zCQ"/>
+                                </constraints>
+                                <state key="normal" title="Measure"/>
+                                <connections>
+                                    <action selector="ProceedAuthenticationMeasure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CuB-Pc-Vco"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NfV-ti-oWd" firstAttribute="top" secondItem="TYn-hv-sH4" secondAttribute="bottom" constant="8" id="0ex-mU-6A4"/>
+                            <constraint firstAttribute="bottom" secondItem="NfV-ti-oWd" secondAttribute="bottom" id="274-Sn-rRX"/>
+                            <constraint firstItem="NfV-ti-oWd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6Hu-Fz-DZN"/>
+                            <constraint firstItem="TYn-hv-sH4" firstAttribute="top" secondItem="TfS-dj-6WX" secondAttribute="bottom" constant="8" id="Ai9-wp-cPy"/>
+                            <constraint firstItem="TYn-hv-sH4" firstAttribute="top" secondItem="TfS-dj-6WX" secondAttribute="bottom" constant="8" id="BWQ-yo-aDm"/>
+                            <constraint firstItem="TYn-hv-sH4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Dac-WI-BbR"/>
+                            <constraint firstItem="TfS-dj-6WX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="G37-jd-q3H"/>
+                            <constraint firstItem="NfV-ti-oWd" firstAttribute="top" secondItem="TYn-hv-sH4" secondAttribute="bottom" constant="8" id="Jex-zG-vMy"/>
+                            <constraint firstItem="NfV-ti-oWd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NzR-zT-54g"/>
+                            <constraint firstItem="NfV-ti-oWd" firstAttribute="top" secondItem="TYn-hv-sH4" secondAttribute="bottom" constant="8" id="akx-gD-bIS"/>
+                            <constraint firstItem="NfV-ti-oWd" firstAttribute="top" secondItem="TYn-hv-sH4" secondAttribute="bottom" constant="8" id="e9U-hd-db7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TfS-dj-6WX" secondAttribute="trailing" constant="20" id="fmH-rr-F7c"/>
+                            <constraint firstItem="TYn-hv-sH4" firstAttribute="top" secondItem="TfS-dj-6WX" secondAttribute="bottom" constant="8" id="gwa-nj-0V3"/>
+                            <constraint firstItem="TfS-dj-6WX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lNf-8p-9pe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="TfS-dj-6WX" id="auH-kb-15s"/>
+                        <outlet property="tableview" destination="NfV-ti-oWd" id="u0F-2T-Idz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127.53623188405798" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
