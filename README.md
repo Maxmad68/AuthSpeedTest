@@ -1,6 +1,6 @@
 # AuthSpeedTest
 iOS/macOS app to measure the speed of the biometrics authentication.
-It currently supports FaceID, TouchID, and Apple Watch validation (macOS)
+It currently supports Face ID, Touch ID, and Apple Watch validation (macOS)
 
 
 ## How to use
@@ -11,22 +11,23 @@ The last row of the list includes the average duration of a measurement, and the
 
 If you want to delete a measurement from the list, slide the row and press the "Delete" button.
 
-### FaceID
+### Face ID
 Please ensure you are facing the device, and you are not closing your eyes during the measure. Press the "Measure" button and wait for the measure to end.
 
 If the measure fails, and an alert pops up, press "Cancel" so the measure can be marked as a fail.
 
-### TouchID (Mac & iOS)
+### Touch ID (Mac & iOS)
 Please put your finger on the sensor **before** pressing the "Measure" button. Then, press that button. If the measure fails, press "Cancel" to mark the measure as a fail.
 
-Lift your finger from the sensor between two TouchID measures. If you keep your finger on the sensor, the next measure couldn't be done.
+Lift your finger from the sensor between two Touch ID measures. If you keep your finger on the sensor, the next measure couldn't be done.
 
 ## Results
 I've taken measures with the following devices:
 
-* iPhone Xr (FaceID)
-* iPad Air 3 (TouchID 2)
-* MacBook Pro 13" (TouchID 2)
+* iPhone Xr (Face ID)
+* iPad Air 3 (Touch ID 2)
+* MacBook Pro 13" (Touch ID 2)
+* iPhone SE 2nd gen (Touch ID 2)
 
 For 100 measures, here are the results:
 
