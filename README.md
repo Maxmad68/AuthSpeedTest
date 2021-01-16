@@ -30,10 +30,11 @@ I've taken measures with the following devices:
 
 For 100 measures, here are the results:
 
-| Device      | Auth systm | Average time | Fails |
-|-------------|------------|--------------|-------|
-| iPhone Xr   | FaceID     | 0.557s       | 5     |
-| MacBook Pro | TouchID 2  | 0.483s       | 2     |
-| iPad Air 3  | TouchID 2  | 0.315s       | 1     |
+| Device                  | Auth System | Last reset  | Average time | Fails |
+|-------------------------|-------------|-------------|--------------|-------|
+| iPhone Xr               | Face ID     | Nov 2018    | 0.41s        | 5     |
+| MacBook Pro (13", 2019) | Touch ID 2  | Dec 2020    | 0.32s        | 2     |
+| iPad Air 3              | Touch ID 2  | Oct 2019    | 0.21s        | 1     |
+| iPhone SE (2020)        | Touch ID 2  | 13 Jan 2021 | 0.29s        | 2     |
 
 *(You are welcome to send me more tests results)*
