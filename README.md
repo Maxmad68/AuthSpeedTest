@@ -28,6 +28,7 @@ I've taken measures with the following devices:
 * iPad Air 3 (Touch ID 2)
 * MacBook Pro 13" (Touch ID 2)
 * iPhone SE 2nd gen (Touch ID 2)
+* iPad Pro 2021 11" (Face ID)
 
 For 100 measures, here are the results:
 
@@ -37,5 +38,7 @@ For 100 measures, here are the results:
 | MacBook Pro (13", 2019) | Touch ID 2  | Dec 2020    | 0.32s        | 2     |
 | iPad Air 3              | Touch ID 2  | Oct 2019    | 0.21s        | 1     |
 | iPhone SE (2020)        | Touch ID 2  | 13 Jan 2021 | 0.29s        | 2     |
+| iPad Pro (11", 2021)    | Face ID     | 26 Mar 2022 | 0.52s        | 1     |
+
 
 *(You are welcome to send me more tests results)*
